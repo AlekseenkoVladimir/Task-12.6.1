@@ -24,4 +24,4 @@
 
 ## Ссылка на папку проекта в репозитории
 
-[https://github.com/AlekseenkoVladimir/Task-11.7.1](https://github.com/AlekseenkoVladimir/Task-11.7.1)
+[https://github.com/AlekseenkoVladimir/Task-12.6.1](https://github.com/AlekseenkoVladimir/Task-12.6.1)
