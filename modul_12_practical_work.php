@@ -124,4 +124,3 @@ function getPerfectPartner($perfSurname, $perfName, $perfPatronomyc, $personsArr
     ♡ Идеально на $compatibility% ♡;
     EOS;
 }
-print_r(getShortName('Петрякова Валентина Фёдоровна') . "\n");
