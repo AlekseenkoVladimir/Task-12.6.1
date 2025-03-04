@@ -127,6 +127,3 @@ function getPerfectPartner($perfSurname, $perfName, $perfPatronomyc, $personsArr
     ♡ Идеально на $compatibility% ♡;
     EOS;
 }
-
-echo getGenderFromName('аль-Хорезми Мухаммад ибн-Муса') . "\n";
-echo getPerfectPartner('аль-Хорезми', 'Мухаммад', 'ибн-Муса', $persons_array) . "\n";
