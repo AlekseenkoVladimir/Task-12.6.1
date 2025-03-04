@@ -110,8 +110,11 @@ function getPerfectPartner($perfSurname, $perfName, $perfPatronomyc, $personsArr
 {
     $newFullName = getFullnameFromParts(upperCaseFirst($perfSurname), upperCaseFirst($perfName), upperCaseFirst($perfPatronomyc));
     $newGender = getGenderFromName($newFullName);
+    if (!$newGender) {
+        return 'Не удалось подобрать идеальную пару';
+    }
     $gender = 0;
-    while ($gender === $newGender || $gender === 0 || $newGender === 0) {
+    while ($gender === $newGender || $gender === 0) {
         $fullName = $personsArrow[random_int(0, count($personsArrow) - 1)]['fullname'];
         $gender = getGenderFromName($fullName);
     }
@@ -124,3 +127,6 @@ function getPerfectPartner($perfSurname, $perfName, $perfPatronomyc, $personsArr
     ♡ Идеально на $compatibility% ♡;
     EOS;
 }
+
+echo getGenderFromName('аль-Хорезми Мухаммад ибн-Муса') . "\n";
+echo getPerfectPartner('аль-Хорезми', 'Мухаммад', 'ибн-Муса', $persons_array) . "\n";
